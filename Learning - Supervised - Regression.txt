@@ -1,0 +1,79 @@
+Regression or Prediction
+
+Predicted outputs are continuous real value
+	rather than discrete
+
+Input
+	Temp. vs Time of Day
+		how long will this product last, before it fails?
+		
+-> a supervised problem, the .
+
+
+Overfitting
+	trying to fit the noise in data
+	avoided through regularization
+
+Linear Regression
+	minimize sum of squared (prediction) errors
+
+Basis transformation to Higher Dimensions
+	(x1, x2) -> (x1^2, x2^2, x1*x2, x1, x2) 
+		in 5 dimension - linear plane
+		in 2 dimension - 2nd order polynomial
+fitting a function that is linear in input variables
+	
+Time-series prediction
+	rainfall in certain area
+		what is the expected rainfall, tomorrow?
+	spend on voice calls
+Classification
+Data reduction
+	by fitting the curve to numerous data points
+		and sharing co-efficients of the line/curve
+			sufficient to get sense of data
+Trend analysis
+	e.g., running time scales linearly or exponentially
+	Linear
+	Exponential
+Risk factor analysis
+	factors contributing most to the input
+
+
+Supervised learning: 
+	The computer is presented with "example" inputs and their desired outputs, 
+		given by a "teacher", 
+	goal is to learn a general rule that maps inputs to outputs
+		input: 
+			patient, who comes to clinic
+			certain equation
+			question description
+		output: 
+			whether he has a specific disease or not
+			equation's output
+			true or false
+	As special cases, the input signal can be: 
+		only partially available, or 
+		restricted to special feedback
+		
+	Linear Regression
+	Random Forest
+	Support Vector Machines
+
+	Cortana, Siri or any speech-recognition system
+	Weather app
+		sunny - temp. high
+		cloudy - high humidity
+	Identification through biometrics
+	Credit worthiness of credit card holder
+	Credit card fraud detection - valid transaction or not
+	patient readmission rate
+	products, customers buy together
+	Sentiment analysis
+		opinion mining
+		buzz analysis
+		based on review, check whether it is +ve or -ve and what are the specific points
+	Potential Churner's prediction	
+		will customer leave your service or continue using your product
+	Medical diagnosis
+		risk analysis

@@ -1,0 +1,109 @@
+Experience or Training (Labeled) Data Set Input
+	some description of data as attributes is available
+		e.g., customer's age and income (both are attributes)
+		to build a classifier
+	normalize data (encode)
+
+Goal: To predict
+	e.g., if the customer will buy a particular product or not
+	Output is discrete value - classification into Labels
+		e.g., yes or no
+
+
+Methodology of Training Algo:
+	Come up with a mapping classifier function
+		to map input to output
+
+Many different ways of coming up with this mapping function (classifiers):
+	If data is viewed geometrically, like, points in space,
+		then function can be defined through lines or curves on the input space
+
+Trade-off between Classifier's complexity and accuracy (Performance)
+	is complexity worth vs time and money and resources
+
+
+Inductive Bias:
+	assumption about the input data's distribution
+		lines, curves can segregate data into different categories (classes)
+	Language Bias
+		straight / slanted lines, curves and thier orders
+	Search Bias
+		order of examination
+	helps to generalize from few training points to the entire space
+
+Curves/Lines implemented through different structures
+
+Different kinds of learning mechanisms:
+	ANN
+	SVM
+	Decision Trees
+	Nearest Neighbours
+	Bayesian Networks
+
+
+Validation through Test set
+	not earlier shown to the Training Algo
+	gives feedback to the Training Algo to change parameters for estimation
+
+
+Training Algo - for classification and regression
+	Learning Algo - feedback system
+
+Supervised learning: 
+	The computer is presented with "example" inputs and their desired outputs, 
+		given by a "teacher", 
+	goal is to learn a general rule that maps inputs to outputs
+		input: 
+			patient, who comes to clinic
+			certain equation
+			question description
+		output: 
+			whether he has a specific disease or not
+			equation's output
+			true or false
+	As special cases, the input signal can be: 
+		only partially available, or 
+		restricted to special feedback
+		
+	Linear Regression
+	Random Forest
+	Support Vector Machines
+
+	Cortana, Siri or any speech-recognition system
+	Weather app
+		sunny - temp. high
+		cloudy - high humidity
+	Identification through biometrics
+	Credit worthiness of credit card holder
+	Credit card fraud detection - valid transaction or not
+	patient readmission rate
+	products, customers buy together
+	Sentiment analysis
+		opinion mining
+		buzz analysis
+		based on review, check whether it is +ve or -ve and what are the specific points
+	Potential Churner's prediction	
+		will customer leave your service or continue using your product
+	Medical diagnosis
+		risk analysis
+
+based on desired outputs:
+	classification: 
+		categorical output
+			whether a patient has a disease or not
+			answer is true or false
+		inputs are divided into two or more classes, and 
+		the learner must produce a model 
+			that assigns unseen inputs to 
+				one or more (multi-label classification) of these classes
+		-> typically, tackled in a supervised way
+		e.g., Spam filtering:
+			inputs - email (or other) messages 
+			classes - "spam" and "not spam"
+	
+	regression
+		outputs are continuous 
+			rather than discrete
+				how long will this product last, before it fails?
+				what is the expected rainfall, tomorrow?
+		-> a supervised problem, the .
