@@ -12,16 +12,17 @@ Input
 
 Overfitting
 	trying to fit the noise in data
-	avoided through regularization
+	avoided through regularization(?)
 
 Linear Regression
 	minimize sum of squared (prediction) errors
+[Rgression - Linear.png]
 
 Basis transformation to Higher Dimensions
 	(x1, x2) -> (x1^2, x2^2, x1*x2, x1, x2) 
 		in 5 dimension - linear plane
 		in 2 dimension - 2nd order polynomial
-fitting a function that is linear in input variables
+fitting a (any-order) function that is linear in input variables
 	
 Time-series prediction
 	rainfall in certain area
@@ -33,7 +34,7 @@ Data reduction
 		and sharing co-efficients of the line/curve
 			sufficient to get sense of data
 Trend analysis
-	e.g., running time scales linearly or exponentially
+	e.g., running time scales linearly or exponentially with input size
 	Linear
 	Exponential
 Risk factor analysis
@@ -77,3 +78,5 @@ Supervised learning:
 		will customer leave your service or continue using your product
 	Medical diagnosis
 		risk analysis
+	time spend on voice calls
+	Data reduction by sending co-efficient of curves to get the sense of the data trend

@@ -1,0 +1,79 @@
+Unlabelled Training Data
+[Training Data - Unlabelled.png]
+	- no separate colors for different dots
+
+	No labels are given to the learning algorithm, 
+		leaving it on its own to find structure in its input
+	discovering hidden patterns in data
+	feature learning
+
+	K-means
+	Apriori
+	Hierarchical
+
+	segment customers by behavioral characteristics
+	categorize MRI data by normal or abnormal 
+	recommend products to customers based on past purchases
+		colaborative filtering model based on past purchases
+
+Clustering: 
+	[Task 1] find groups of coherent or cohesive data points in the input space
+		based on some form of assumed bias
+			like, ellipsoid cluster groups [Possible Clusters.png]
+	a set of inputs is to be divided into cohesive groups
+		categories of customers coming to a shop - college students, young IT professionals, etc.
+	Unlike in classification: 
+		groups are not known beforehand
+		-> typically an unsupervised task
+	//
+	[Task 2] Not all data points need to fall into clusters
+		known as outliers
+			do not conform to the patterns of the input
+		an artifact of the assumed bias (ellipsoids)
+	//
+	Discover:
+		classes of customers from their data
+			for tageted promotions
+		different regions among image pixels
+			for segmentation to make more sense out of the image
+			finding clouds, sand, sea, trea from a beach scene picture
+			[Image Segmentation.png]
+		synonyms from words usages
+		different topics in documents
+
+
+Association rule (Frequent pattern) mining:
+	[Stage 1] find ALL frequent co-occurrence (patterns) of items in the given data
+		whenever A comes to shop, B also comes to the shop
+	[Stage 2] derive conditional dependencies (associations) from these frequent patterns
+	//
+	Find patterns in (data):
+		sequences
+			time-series
+				look at triggers for certain events
+			fault analysis
+				by looking at the sequence of events that happened
+				which event occurs more often with the fault - cause(s) of faults
+		graphs
+			social network analysis
+				which kind of interactions, among entities, happen often
+		transactions mining 
+			transaction - a collection of items, bought together
+			itemset: a (sub)set of items
+			1. find frequent itemsets
+			2. Itemset A => (implies) Itemset B, if both A and (A U B) are frequent itemsets
+			//
+			predicting co-occurrence of events
+			market basket analysis
+			time-series analysis to recognize triggerring events
+----------------------------------------------------------------------------
+ML Task			Performance Measure
+-------			-------------------
+Clustering		scatter (spread-out) / purity
+					what fractions of groups are college students
+Associations	support/confidence
+
+----------------------------------------------------------------------------
+
+Applications:
+	

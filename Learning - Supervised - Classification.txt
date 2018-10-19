@@ -1,4 +1,4 @@
-Experience or Training (Labeled) Data Set Input
+Experience or Training (Labeled) Data Set Input [[Training Data - Labelled.png]]
 	some description of data as attributes is available
 		e.g., customer's age and income (both are attributes)
 		to build a classifier
@@ -26,9 +26,9 @@ Inductive Bias:
 	assumption about the input data's distribution
 		lines, curves can segregate data into different categories (classes)
 	Language Bias
-		straight / slanted lines, curves and thier orders
+		straight / slanted lines, curves and their orders
 	Search Bias
-		order of examination
+		in what order, will lines be examined
 	helps to generalize from few training points to the entire space
 
 Curves/Lines implemented through different structures
@@ -42,12 +42,14 @@ Different kinds of learning mechanisms:
 
 
 Validation through Test set
+	we know what the labels are
 	not earlier shown to the Training Algo
 	gives feedback to the Training Algo to change parameters for estimation
-
+[Process.png]
 
 Training Algo - for classification and regression
 	Learning Algo - feedback system
+[Training.png]
 
 Supervised learning: 
 	The computer is presented with "example" inputs and their desired outputs, 
